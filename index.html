@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Navidad</title>
+<link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+<div class="caja">
+  <h1>Navidad</h1>
+  <nav>
+    <button onclick="ver('bienvenida')">bienvenida</button>
+    <button onclick="ver('historia')">historia</button>
+    <button onclick="ver('personajes')">personajes</button>
+    <button onclick="ver('regalos')">Regalos</button>
+    <button onclick="ver('comida')">Comida</button>
+  </nav>
+</div>
+
+<div class="caja" id="contenido">
+
+  <div id="bienvenida" class="seccion visible">
+    <h2>Bienvenida</h2>
+    <ul>
+      <li>Historia</li>
+      <li>Personajes</li>
+      <li>Regalos</li>
+      <li>Comida</li>
+    </ul>
+    <table border="1" cellpadding="6">
+      <tr><th>Fecha</th><th>Celebración</th></tr>
+      <tr><td>24 dic</td><td>Nochebuena</td></tr>
+      <tr><td>25 dic</td><td>Navidad</td></tr>
+    </table>
+  </div>
+  <div id="historia" class="seccion">
+    <h2>Historia</h2>
+    <p>La navidad es una de las celebraciones más importantes en todo el mundo. Es un hito importante para nosotros, el final de un año, tiempo de regalos, festejos, reuniones familiares y –para los cristianos practicantes- una emotiva fiesta religiosa.</p>
+  <p>Aunque normalmente asociamos el origen de la Navidad a los mitos cristianos y al catolicismo, puesto que representa el nacimiento del niño Jesús; en realidad, esto es un error, al menos tal y como tenemos hoy en día aceptada la Navidad.
+ 
+Precisamente, por esta duda entre la Navidad pagana y la Navidad cristiana, hubo un caso en 1990 en el que la junta escolar de Solon (Ohio) decidió eliminar todas la representaciones de la Navidad en cualquier ámbito escolar, puesto que era una práctica en contra del Estado laico de la ciudad, es decir, no respetaba la sepación entre Iglesia y Estado. Igualmente, la junta perdió el caso porque las familias se oposieron a que sus hijos no pudiesen celebrar la Navidad en el colegio, defendiendo que la práctica de la Navidad era un acto secular y formaba parte de todas las culturas del mundo. A pesar de que la junta perdiera el caso, sí lograron eliminar las oraciones y la lectura de la biblia, asociadas a la celebración de la Navidad.</p>
+
+  </div>
+
+  <div id="personajes" class="seccion">
+    <h2>Personajes</h2>
+    <button onclick="desc('Papá Noel (también conocido como Santa Claus o Viejito Pascuero) es una figura legendaria asociada a la Navidad, célebre por repartir regalos la noche del 24 de diciembre.')">🎅</button>
+    <button onclick="desc('renos son los compañeros mágicos de Santa Claus (o Papá Noel) que tiran de su trineo entre el 24 y el 25 de diciembre para repartir regalos por todo el mundo. El más famoso es Rodolfo (o Rudolph), un reno de nariz roja brillante cuya historia creó Robert L. May en 1939.')">🦌</button>
+    <button onclick="desc('El muñeco de nieve es uno de los símbolos más populares de la Navidad y el invierno, representando la alegría, la infancia y el espíritu festivo de la temporada.')">⛄</button>
+    <p id="descripcion">Haz click en un personaje.</p>
+  </div>
+  <div id="regalos" class="seccion">
+    <h2>Regalos</h2>
+    <div class="galeria">
+      <img src="imags/regalo1.jpg" alt="Regalo 1">
+    </div>
+  </div>
+
+  <div id="comida" class="seccion">
+    <h2>Comida</h2>
+    <div class="galeria">
+      <img src="imags/comida1.jpg" alt="Plato navideño 1">
+    </div>
+  </div>
+
+</div> <!-- cierra la caja "contenido" -->
+
+<div class="caja" id="pie">diseñado por: Saul Abner Gutierrez Huañapaco</div>
+
+<script src="script.js"></script>
+</body>
+</html>
